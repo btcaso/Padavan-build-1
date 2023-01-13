@@ -24,6 +24,7 @@ jobs:
       uses: actions/checkout@master
     - name: Initialization environment
       env:
+        FILE_PATH: /opt/images
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo apt-get update
